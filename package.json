@@ -1,0 +1,25 @@
+{
+  "name": "serf",
+  "version": "0.8.0",
+  "description": "https://www.serf.io/",
+  "dependencies": {},
+  "scripts": {
+    "key": "hashicorp-deb:key",
+    "download": "hashicorp-deb:download",
+    "build": "hashicorp-deb:build",
+    "package": "hashicorp-deb:package",
+    "install": "hashicorp-deb:install",
+    "preinstall": "npm run key && npm run download && npm run build && npm run package",
+    "clean": "rm -rf .downloads .builds .packages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahdinosaur/debian-serf.git"
+  },
+  "author": "Mikey <michael.williams@enspiral.com> (http://dinosaur.is)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahdinosaur/debian-serf/issues"
+  },
+  "homepage": "https://github.com/ahdinosaur/debian-serf#readme"
+}
